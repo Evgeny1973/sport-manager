@@ -4,14 +4,14 @@ namespace App\Model\Game\Entity;
 
 class Game
 {
-    private $id;
-    private $language;
-    private $sport;
-    private $league;
-    private $team1;
-    private $team2;
-    private $start;
-    private $source;
+    private Id $id;
+    private string $language;
+    private string $sport;
+    private string $league;
+    private string $team1;
+    private string $team2;
+    private \DateTimeImmutable $start;
+    private string $source;
     
     public function __construct(
         Id $id,
