@@ -22,7 +22,7 @@ class GameBufferController extends AbstractController
         
         $violations = $validator->validate($dto);
         
-        if (count($violations) > 0) {
+        if ($violations->count() > 0) {
             $err = $serializer->serialize($violations, 'json');
             return JsonResponse::fromJsonString($err, 400);
         }

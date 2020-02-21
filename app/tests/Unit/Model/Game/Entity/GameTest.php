@@ -5,6 +5,7 @@ namespace App\Tests\Unit\Model\Game\Entity;
 
 
 use App\Model\Game\Entity\Game;
+use App\Model\Game\Entity\Id;
 use PHPUnit\Framework\TestCase;
 
 class GameTest extends TestCase
@@ -12,6 +13,7 @@ class GameTest extends TestCase
     public function testSuccess(): void
     {
         $game = new Game(
+            $id = new Id('123123'),
             $language = 'ru',
             $sport = 'football',
             $league = 'League UEFA',
