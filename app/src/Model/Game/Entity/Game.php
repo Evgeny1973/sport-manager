@@ -8,8 +8,8 @@ class Game
     private string $language;
     private string $sport;
     private string $league;
-    private string $team1;
-    private string $team2;
+    private string $firstTeam;
+    private string $secondTeam;
     private \DateTimeImmutable $start;
     private string $source;
     
@@ -18,8 +18,8 @@ class Game
         string $language,
         string $sport,
         string $league,
-        string $team1,
-        string $team2,
+        string $firstTeam,
+        string $secondTeam,
         \DateTimeImmutable $start,
         string $source
     )
@@ -28,8 +28,8 @@ class Game
         $this->language = $language;
         $this->sport = $sport;
         $this->league = $league;
-        $this->team1 = $team1;
-        $this->team2 = $team2;
+        $this->firstTeam = $firstTeam;
+        $this->secondTeam = $secondTeam;
         $this->start = $start;
         $this->source = $source;
     }

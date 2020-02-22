@@ -20,6 +20,10 @@ class Id
         $this->value = $value;
     }
     
+    /**
+     * @return string
+     * @throws \Exception
+     */
     public static function next(): string
     {
         return new self(Uuid::uuid4()->toString());
